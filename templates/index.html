@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Главная — Flask Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg,#1f2937,#4c1d95);
+      color: #fff;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .card {
+      background: rgba(255,255,255,0.06);
+      border-radius: 12px;
+      padding: 28px;
+      width: 100%;
+      max-width: 720px;
+      box-shadow: 0 8px 30px rgba(2,6,23,0.5);
+      text-align: center;
+    }
+    h1 { margin: 0 0 8px; font-size: 28px; }
+    p.lead { margin: 0 0 18px; opacity: .9; }
+    .links { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:18px; }
+    a.btn {
+      text-decoration: none;
+      background: rgba(255,255,255,0.12);
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: transform .12s, background .12s;
+    }
+    a.btn:hover { transform: translateY(-3px); background: rgba(255,255,255,0.18); }
+    footer { margin-top:18px; font-size:13px; opacity:.8; }
+    code { background: rgba(0,0,0,0.2); padding:4px 6px; border-radius:6px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Flask Demo App</h1>
+    <p class="lead">Небольшое приложение с четырьмя эндпоинтами. Нажми на кнопку, чтобы перейти.</p>
+
+    <div class="links">
+      <a class="btn" href="/">Главная</a>
+      <a class="btn" href="/about">About</a>
+      <a class="btn" href="/data">Data (JSON)</a>
+      <a class="btn" href="/form">Form (Добавить)</a>
+    </div>
+
+    <footer>
+      Адрес сервера: <code>http://127.0.0.1:5000/</code>
+    </footer>
+  </div>
+</body>
+</html>
